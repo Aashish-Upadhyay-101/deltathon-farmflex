@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 const reducer = (state, action) => {
   switch (action.type) {
     case "UPDATE_USER": {
@@ -6,17 +5,6 @@ const reducer = (state, action) => {
     }
     default: {
       return { ...state };
-=======
-
-const reducer = (state, action)=>{
-    switch(action.type){
-        case "UPDATE_USER": {
-        return {...state}
-        }
-        default:{
-            return{...state}
-        }
->>>>>>> Stashed changes
     }
   }
 };
