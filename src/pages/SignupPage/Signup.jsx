@@ -1,10 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Signup.css";
 import { Button, Input, message, Steps, theme, Checkbox } from "antd";
-import { useState } from "react";
-import countryList from "react-select-country-list";
-import { UserOutlined, LockOutlined } from "@ant-design/icons";
-import { Form } from "react-router-dom";
+import axios from "axios";
 
 const options = ["Nepal", "India", "Pakistan"];
 
@@ -18,6 +15,7 @@ const steps = [
             Username
           </label>
           <input
+            name="username"
             id="username"
             type="text"
             className="form-group-input"
@@ -29,6 +27,7 @@ const steps = [
             Email
           </label>
           <input
+            name="email"
             id="email"
             type="email"
             className="form-group-input"
@@ -40,6 +39,7 @@ const steps = [
             First name
           </label>
           <input
+            name="firstname"
             id="text"
             type="text"
             className="form-group-input"
@@ -51,6 +51,7 @@ const steps = [
             Last name
           </label>
           <input
+            name="lastname"
             id="text"
             type="text"
             className="form-group-input"
@@ -62,6 +63,7 @@ const steps = [
             Password
           </label>
           <input
+            name="password"
             id="password"
             type="password"
             className="form-group-input"
@@ -73,6 +75,7 @@ const steps = [
             Confirm password
           </label>
           <input
+            name="confirmpassword"
             id="password"
             type="password"
             className="form-group-input"
@@ -101,10 +104,10 @@ const steps = [
             Country
           </label>
           <select className="signup-select">
-            <option>Nepal</option>
-            <option>India</option>
-            <option>Bangladesh</option>
-            <option>Srilanka</option>
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="srilanka">Srilanka</option>
           </select>
         </div>
         <div className="form-group">
@@ -112,6 +115,7 @@ const steps = [
             City
           </label>
           <input
+            name="city"
             id="city"
             type="city"
             className="form-group-input"
@@ -123,6 +127,7 @@ const steps = [
             Zip code
           </label>
           <input
+            name="zipcode"
             id="text"
             type="text"
             className="form-group-input"
@@ -134,6 +139,7 @@ const steps = [
             Phone number
           </label>
           <input
+            name="phonenumber"
             id="text"
             type="text"
             className="form-group-input"
@@ -144,7 +150,7 @@ const steps = [
           <label htmlFor="whoAreYou" className="form-group-label">
             Who are you?
           </label>
-          <select className="signup-select">
+          <select className="signup-select" name="whoareyou">
             <option>Farmer</option>
             <option>Cold Store</option>
             <option>Consumer</option>
@@ -155,11 +161,44 @@ const steps = [
   },
 ];
 const Signup = () => {
+  const [stepOneSignUp, setStepOneSignUp] = useState({
+    username:"",
+    email:"",
+    firstname:"",
+    lastname:"",
+    password:"",
+    confirmpassword:""
+  })
+  const [stepTwoSignUp, setStepTwoSignUp] = useState({
+    country:"",
+    city:"",
+    zipCode:"",
+    phonenumber: "",
+    whoareyou:""
+  })
+
+
   const { token } = theme.useToken();
   const [current, setCurrent] = useState(0);
   const next = () => {
     setCurrent(current + 1);
   };
+
+  const changeOneHandler=(e)=>{
+    const name = e.target.name;
+    const value = e.target.value;
+    setStepOneSignUp((data) => {
+      return { ...stepOneSignUp, [name]: value };
+    });
+  }
+
+  const changeTwoHandler=(e)=>{
+    const name = e.target.name;
+    const value = e.target.value;
+    setStepTwoSignUp((data) => {
+      return { ...stepTwoSignUp, [name]: value };
+    });
+  }
 
   const items = steps.map((item) => ({
     key: item.title,
@@ -175,7 +214,7 @@ const Signup = () => {
   };
   return (
     <div className="signup">
-      <Steps current={current} items={items} />
+      <Steps changeOneHandler={changeOneHandler} changeTwoHandler={changeTwoHandler}  current={current} items={items} stepOneSignUp={stepOneSignUp} />
       <div style={contentStyle}>{steps[current].content}</div>
       <div
         style={{
