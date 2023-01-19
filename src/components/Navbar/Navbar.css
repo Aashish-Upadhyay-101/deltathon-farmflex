@@ -1,0 +1,20 @@
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.link_container{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo_container h1{
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin-left: 7.8rem;
+    color: white;
+}
+
