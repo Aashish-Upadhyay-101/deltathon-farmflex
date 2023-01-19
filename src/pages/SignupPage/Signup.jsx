@@ -2,8 +2,12 @@ import React from "react";
 import "./Signup.css";
 import { Button, Input, message, Steps, theme, Checkbox } from "antd";
 import { useState } from "react";
+import countryList from "react-select-country-list";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { Form } from "react-router-dom";
+
+const options = ["Nepal", "India", "Pakistan"];
+
 const steps = [
   {
     title: "Signup",
@@ -90,7 +94,64 @@ const steps = [
   },
   {
     title: "Create Profile",
-    content: "Last-content",
+    content: (
+      <form className="signup-form">
+        <div className="form-group">
+          <label htmlFor="username" className="form-group-label">
+            Country
+          </label>
+          <select className="signup-select">
+            <option>Nepal</option>
+            <option>India</option>
+            <option>Bangladesh</option>
+            <option>Srilanka</option>
+          </select>
+        </div>
+        <div className="form-group">
+          <label htmlFor="city" className="form-group-label">
+            City
+          </label>
+          <input
+            id="city"
+            type="city"
+            className="form-group-input"
+            placeholder="Dharan"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="zipcode" className="form-group-label">
+            Zip code
+          </label>
+          <input
+            id="text"
+            type="text"
+            className="form-group-input"
+            placeholder="zip code"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phoneNumber" className="form-group-label">
+            Phone number
+          </label>
+          <input
+            id="text"
+            type="text"
+            className="form-group-input"
+            placeholder="include country code"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="whoAreYou" className="form-group-label">
+            Who are you?
+          </label>
+          <select className="signup-select">
+            <option>Farmer</option>
+            <option>Cold Store</option>
+            <option>Consumer</option>
+          </select>
+        </div>
+      </form>
+    ),
   },
 ];
 const Signup = () => {
