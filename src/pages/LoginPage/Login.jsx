@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
@@ -43,7 +44,7 @@ const Login = () => {
         </div>
         <div className="form-extra">
           <p>
-            Didn't have an account? <span>create here</span>
+            Didn't have an account? <Link to="/signup">create here</Link>
           </p>
         </div>
       </form>

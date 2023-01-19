@@ -1,0 +1,21 @@
+.signup {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-top: 6.4rem;
+}
+
+.signup__header {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.signup__header > h1 {
+  font-size: inherit;
+  color: #00b96b;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
