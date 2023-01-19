@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 import React, { createContext, useContext, useReducer } from "react";
 import reducer from "./reducer";
+=======
+import React, { createContext, useContext, useReducer } from 'react';
+import reducer from './reducer';
+>>>>>>> Stashed changes
 const AppContext = createContext();
 const initialState = {
   value: "",
