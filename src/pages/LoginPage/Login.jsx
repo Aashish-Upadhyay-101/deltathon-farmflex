@@ -1,38 +1,27 @@
-import React, {useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
-import { useGlobalContext } from "../../StateManagement/Context.js";
-import axios from "axios";
-
+import { useLoginMutation } from "../../api/farmApi";
 
 const Login = () => {
-  const {URL} = useGlobalContext();
   const [loginData, setLoginData] = useState({
-    email:"",
-    password:"",
-    rememberme: false,
-  })
+    email: "",
+    password: "",
+  });
 
-  const changeHandler =(e)=>{
-    const name = e.target.name;
-    const value = e.target.value;
-    setLoginData((data) => {
-      return { ...loginData, [name]: value };
-    });
-  }
-  
-  const submitHandler = async(e)=>{
+  const [Login, { data }] = useLoginMutation();
+
+  const submitHandler = (e) => {
     e.preventDefault();
-    const instance = await axios.create({
-      withCredentials: true
-    })
-    instance.post(`${URL}api/user/login/`,loginData ).then((data)=>{
-      console.log(data)
-    }).catch((err)=>{
-      console.log(err)
-    })
-    
-  }
+    Login(loginData);
+  };
+
+  useEffect(() => {
+    if (data) {
+      localStorage.setItem("access", data.access);
+      console.log(data);
+    }
+  });
 
   return (
     <div className="login">
@@ -46,7 +35,9 @@ const Login = () => {
           </label>
           <input
             value={loginData.email}
-            onChange={(e)=> changeHandler(e)}
+            onChange={(e) =>
+              setLoginData({ ...loginData, email: e.target.value })
+            }
             name="email"
             id="email"
             type="text"
@@ -60,7 +51,9 @@ const Login = () => {
           </label>
           <input
             value={loginData.password}
-            onChange={(e)=> changeHandler(e)}
+            onChange={(e) =>
+              setLoginData({ ...loginData, password: e.target.value })
+            }
             name="password"
             id="password"
             type="password"
@@ -70,11 +63,7 @@ const Login = () => {
         </div>
         <div className="form-remember">
           <div className="remember-me">
-            <input 
-            onChange={(e)=> changeHandler(e)}
-            name="rememberme" 
-            type="checkbox" 
-            value={loginData.rememberme} /> 
+            <input name="rememberme" type="checkbox" />
             <span>Remember me</span>
           </div>
           <div className="form-extra">
@@ -86,7 +75,7 @@ const Login = () => {
         </div>
         <div className="form-extra">
           <p>
-            Didn't have an account? <Link  to="/signup">create here</Link>
+            Didn't have an account? <Link to="/signup">create here</Link>
           </p>
         </div>
       </form>

@@ -1,0 +1,11 @@
+.DashboardContain_container{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+
+.DashboardContain_container_primary h2{
+    color: #6cc196;
+    font-size: 1.7rem;
+    font-weight: 400;
+}

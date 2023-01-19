@@ -1,0 +1,50 @@
+.faq__container{
+    padding: 10rem 1rem;
+}
+.faq__container_primary{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.faq__container_primary h1{
+    border-bottom: 2px solid #6cc196;
+    font-size: 5rem;
+    display: inline;
+    font-weight: 400;
+    color:#6cc196;
+    text-align: center;
+}
+
+.collaps__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.collaps__container_sub{
+    width: 70%;
+}
+
+.ant-collapse-item{
+    padding: 2rem;
+    color: white!important;
+    font-weight: 500;
+    font-size: 2rem;
+    background-color: #c6fde1;
+}
+.ant-collapse-header-text{
+    color: rgb(0, 0, 0)!important;
+}
+.ant-collapse-expand-icon{
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(0, 0, 0)!important;
+}
+.ant-collapse-item{
+    padding: 0!important;
+}
+.ant-collapse-content-box{
+    padding: .4rem 12rem;
+}
