@@ -1,0 +1,36 @@
+.contact_container{
+    background-color: #6cc196;
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact_container_primary{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.footer_logo_container h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+
+}
+.footer_sociallogo_container{
+    display: flex;
+    gap: 2rem;
+}
+.footer_sociallogo_container img{
+    width: 25px;
+}
+
+.footer_link_one li{
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+    color: white;
+}
+.contact_container_tertiary{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+}

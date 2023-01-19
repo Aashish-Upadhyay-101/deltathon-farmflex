@@ -1,12 +1,10 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
-import { useGlobalContext } from "../../StateManagement/Context.js";
 import axios from "axios";
 
 
 const Login = () => {
-  const {URL} = useGlobalContext();
   const [loginData, setLoginData] = useState({
     email:"",
     password:"",
