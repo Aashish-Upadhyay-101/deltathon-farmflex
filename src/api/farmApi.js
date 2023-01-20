@@ -50,10 +50,22 @@ export const farmApi = createApi({
       query: (store_id) => `store/${store_id}/get-all-products/`,
     }),
 
-    bookStore: builder.mutation({}),
+    bookStore: builder.mutation({
+      query(data) {
+        return {
+          url: "store/book/",
+          method: "POST",
+          body: data,
+        };
+      },
+    }),
 
     getOneProductDetail: builder.query({
       query: (id) => `store/${id}/`,
+    }),
+
+    myStores: builder.query({
+      query: () => "store/mystores",
     }),
   }),
 });
@@ -66,4 +78,6 @@ export const {
   useGetStoresQuery,
   useGetStoreProductsMutation,
   useGetOneProductDetailQuery,
+  useBookStoreMutation,
+  useMyStoresQuery,
 } = farmApi;
