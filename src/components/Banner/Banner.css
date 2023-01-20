@@ -1,63 +1,60 @@
-.banner_container{
-    min-height: 70vh;
-    padding-left: 7.6rem;
-    padding-top: 8.7rem;
-    display: flex;
-    justify-content: space-between;
+.banner_container {
+  min-height: 80vh;
+  padding-left: 7.6rem;
+  padding-top: 8.7rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.banner_container_content{
-    display: flex;
-    flex-direction: column;   
-    width: 40%;
+.banner_container_content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
-.banner_container_video{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.banner_primary{
-    color: black;
-    font-size: 7rem;
-    font-weight: 800;
-    line-height:1.2;
-    color: white;
-
-}
-.banner_secondary{
-    margin-top: 1.2rem;
-    font-size: 1rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1.7;
-    color: white;
+.banner_container_video {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.banner_button_container{
-    display: flex;
-    align-items: center;
+.banner_primary {
+  color: black;
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: white;
 }
-.banner_button{
-    padding: 1rem 3rem;
-    color: green;
-    background-color: white;
-    margin-top: 3rem;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 1.6rem;
-    transition: all .3s;
+.banner_secondary {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: white;
 }
-.banner_button:hover{
-    cursor: pointer;
-    transform: translateY(-2px);
 
+.banner_button_container {
+  display: flex;
+  align-items: center;
 }
-.banner_video{
-    border-radius: 2rem;
-    border: 8px solid rgb(255, 255, 255);
+.banner_button {
+  padding: 1rem 3rem;
+  color: green;
+  background-color: white;
+  margin-top: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.banner_button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+.banner_video {
+  border-radius: 2rem;
+  border: 8px solid rgb(255, 255, 255);
 }

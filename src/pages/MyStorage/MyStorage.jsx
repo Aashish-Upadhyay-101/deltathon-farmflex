@@ -27,14 +27,17 @@ const MyStorage = () => {
         <div className="DashboardContain_container_stores">
           {data?.map((item) => {
             return (
-              <Link to={`/store/${item.store.id}`} key={item.store.id}>
+              <Link
+                to={`/store/${item.store_product.id}`}
+                key={item.store_product.id}
+              >
                 <div className="dashboard_singlestore">
                   <div className="dashboard_singlestore_image">
-                    <img src={item?.store.image} alt="Single product" />
+                    <img src={item?.store_product.image} alt="Single product" />
                   </div>
                   <div className="dashboard_singlestore_detail">
-                    <h1>{item?.store.name}</h1>
-                    <p>{item?.store.rating}</p>
+                    <h1>{item?.store_product.name}</h1>
+                    <p>{item?.store_product.rating}</p>
                   </div>
                 </div>
               </Link>

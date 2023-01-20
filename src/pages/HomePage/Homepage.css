@@ -1,5 +1,5 @@
-.heropage__herosection{
-    background-image: url("../../images/banner_img.svg");
-    min-height: 160vh;
-    background-repeat: no-repeat;
+.heropage__herosection {
+  background-image: url("../../images/banner_img.svg");
+  min-height: 180vh;
+  background-repeat: no-repeat;
 }

@@ -11,10 +11,11 @@ import {
   useGetOneProductDetailQuery,
   useBookStoreMutation,
 } from "../../api/farmApi";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Rate, Modal, notification } from "antd";
 
 const SingelProductDetail = () => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [image, setImage] = useState("");
   const [detail, setDetail] = useState({
@@ -59,13 +60,8 @@ const SingelProductDetail = () => {
       duration: "",
     });
 
-    notification.open({
-      message: "Store booked",
-      description: "Check my storages to see what you have on your store.",
-      onClick: () => {
-        console.log("Notification Clicked!");
-      },
-    });
+    navigate("/payment-in-khalti");
+
     setOpen(false);
   };
 
