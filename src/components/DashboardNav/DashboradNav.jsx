@@ -1,6 +1,6 @@
 import React from "react";
 import "./DashboardNav.css";
-import image from "../../images/safe-part-2-svgrepo-com.svg";
+import image from "../../images/leaf.svg";
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
 const DashboradNav = () => {

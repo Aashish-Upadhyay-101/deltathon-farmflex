@@ -11,6 +11,15 @@
     justify-content: space-around;
 }
 
+.logo_container{
+    display: flex;
+    gap: 1rem;
+}
+
+.logo_container img{
+    width: 3.2rem;
+}
+
 .logo_container h1{
     font-size: 3.8rem;
     font-weight: 600;

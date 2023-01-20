@@ -1,18 +1,15 @@
 import React from 'react'
-import Image from "../../images/safe-part-2-svgrepo-com.svg"
-import "./Contact.css"
+import facebook from "../../images/facebook.svg";
+import instagram from "../../images/Instagram.svg";
+import youtube from "../../images/youtube.svg";
+import linkedin from "../../images/LinkedIn.svg"
+import "./Contact.css";
 export const Contact = () => {
   return (
     <div className='contact_container'>
         <div className='contact_container_primary'>
             <div className='footer_logo_container'>
                 <h1>FarmFlex</h1>
-            </div>
-            <div className='footer_sociallogo_container'>
-            <img src={Image} />
-            <img src={Image} />
-            <img src={Image} />
-            <img src={Image} />
             </div>
         </div>
         <div className='contact_container_secondary'>

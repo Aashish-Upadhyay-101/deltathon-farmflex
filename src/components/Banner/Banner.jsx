@@ -14,7 +14,7 @@ const Banner = () => {
         {/* <video className='banner_video' width="750" height="540" controls >
         <source src="https://www.youtube.com/embed/vc7909PRQAE"  />
         </video> */}
-        <iframe className='banner_video' width="750" height="540" src="https://www.youtube.com/embed/vc7909PRQAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe className='banner_video' width="750" height="540" src="https://www.youtube.com/embed/6K2xOi1Xkx0?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
   )
