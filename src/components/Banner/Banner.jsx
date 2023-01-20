@@ -21,11 +21,21 @@ const Banner = () => {
         {/* <video className='banner_video' width="750" height="540" controls >
         <source src="https://www.youtube.com/embed/vc7909PRQAE"  />
         </video> */}
-        <iframe
+        {/* <iframe
           className="banner_video"
           width="590"
           height="440"
           src="https://www.youtube.com/embed/vc7909PRQAE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe> */}
+        <iframe
+          className="banner_video"
+          width="590"
+          height="440"
+          src="https://www.youtube.com/embed/V0wW9vFkx-Y?autoplay=1&mute=1"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
