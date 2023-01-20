@@ -20,7 +20,7 @@ const DashboradNav = () => {
                     <h2 className='select_link'>Get Storage</h2>
                     <div className='dashboardnav_link'>
                         
-                        <Link to="/bookstorage"><h2 className='select_link'>Book Storage</h2></Link>
+                        <Link to="/store"><h2 className='select_link'>Book Storage</h2></Link>
                         <Link to="/mystorage"><h2>My Storage</h2></Link>
                     </div>
                 </div>

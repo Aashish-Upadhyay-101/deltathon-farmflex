@@ -5,7 +5,7 @@ import Signup from "./pages/SignupPage/Signup";
 import { ConfigProvider } from "antd";
 import Homepage from "./pages/HomePage/Homepage.js";
 import  Storepage  from "./pages/StorePage/Storepage.js";
-
+import SingleStorePage from "./pages/SingleStorePage/SingleStorePage.js";
 function App() {
   return (
     <ConfigProvider
@@ -21,6 +21,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/store" element={<Storepage />}></Route>
+          <Route path="/store/id" element={<SingleStorePage />}></Route>
         </Routes>
       </div>
     </ConfigProvider>

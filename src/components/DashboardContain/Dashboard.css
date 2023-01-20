@@ -9,3 +9,31 @@
     font-size: 1.7rem;
     font-weight: 400;
 }
+.DashboardContain_container_stores{
+    padding:2rem;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px, 1fr));
+    gap: 3rem;
+}
+.dashboard_singlestore{
+    padding: 1rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.dashboard_singlestore_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard_singlestore_image img{
+    width: 80%;
+    height: 80%;
+}
+
+.dashboard_singlestore_detail{
+    padding: 1rem;
+}
+.dashboard_singlestore_detail h1{
+    font-size: 1.5rem;
+    color: #6cc196;
+}

@@ -1,0 +1,131 @@
+.SingelProductDetail_container{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+
+.SingelProductDetail_container_primary h2{
+    color: #6cc196;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.SingelProductDetail_container_stores{
+    padding:2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:21rem;
+}
+.SingelProductDetail_singlestore{
+    padding: 2rem 1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+.SingelProductDetail_singlestore_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SingelProductDetail_singlestore_image img{
+    width: 50%;
+    height: 50%;
+}
+
+.SingelProductDetail_singlestore_image h2{
+    align-self: flex-start;
+    font-size: 2rem;
+    color: #517A65;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.SingelProductDetail_singlestore_detail{
+    padding: 1rem;
+}
+.SingelProductDetail_singlestore_detail h1{
+    font-size: 1.5rem;
+    color:  #517A65;;
+}
+
+.icon{
+    font-size: 2rem;
+    font-weight: 500;
+    color:  #517A65;
+    margin-left: 2rem;
+}
+
+.SingelProductDetail_singlestore_detail p{
+    font-size: 2rem;
+    font-weight: 500;
+    color:  #517A65;
+    margin-left: 2rem;
+}
+
+
+
+.SingelProductDetail_container_stores_fruits{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.SingelProductDetail_container_stores_bookstorage_primary{
+
+    font-size: 2.8rem;
+    font-weight: 500;
+    color:  #517A65;;
+}
+
+
+.SingelProductDetail_container_stores_bookstorage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.SingelProductDetail_singlestore_big{
+display: flex;
+justify-content: center;
+flex-direction: column;
+box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.25);
+padding: 6rem 2rem;
+border-radius: 12px;
+}
+.SingelProductDetail_singlestore_image_big{
+    display: flex;
+    justify-content: center;
+}
+.SingelProductDetail_singlestore_image_big img{
+    width: 50%;
+}
+
+.SingelProductDetail_singlestore_detail_big h1{
+    font-size: 2rem;
+    color: #517A65;
+    justify-self: start;
+    margin-top: 3rem;
+}
+.SingelProductDetail_singlestore_detail_big p{
+    font-size: 2rem;
+    color: #517A65;
+    justify-self: start;
+}
+
+.SingelProductDetail_singlestore_detailsecondary{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.SingelProductDetail_singlestore_detailsecondary p {
+    font-size: 1.6rem;
+    color: #517A65;
+}
+.icon{
+    font-size: 1.6rem;
+    color: #517A65;
+}
