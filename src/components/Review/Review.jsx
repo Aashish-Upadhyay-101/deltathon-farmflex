@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ReviewHome.css"
-import Imageone  from "../../images/safe-part-2-svgrepo-com.svg"
+import Imageone  from "../../images/profile.svg"
 const Review = () => {
   return (
     <div className='review_container'>
@@ -12,42 +12,39 @@ const Review = () => {
                 <div className='reviews_container_first'>
                     <img src={Imageone} alt='user image'/>
                     <div className='reviews_container_second'>
-                        <h1>Richard Tee</h1>
+                        <h1>Prashant Bhattrai</h1>
                         <p>5</p>
                         <p>Feb 14, 2022 via Trustpilot</p>
                     </div>
                 </div>
                 <div className='reviews_container_second'>
-                <h2>A Solid product with good support</h2>
-                <h3>I’ve been using another well-established accounting software which has worked well but the Covid took a major toll on my business and I’ve needed to cut my costs which included looking at another accounting solution. After a little searching, I came across Invoice crowd, and again after performing a little due diligence, I could see that they were a relatively new company.</h3>
+                <h3>I've been using this cold storage booking app for a few months now and it's been a game changer for my farming business..</h3>
                 </div>
             </div>
             <div className='reviews_container_sub'>
                 <div className='reviews_container_first'>
                     <img src={Imageone} alt='user image'/>
                     <div className='reviews_container_second'>
-                        <h1>Richard Tee</h1>
+                        <h1>Dipen Pandit</h1>
                         <p>5</p>
                         <p>Feb 14, 2022 via Trustpilot</p>
                     </div>
                 </div>
                 <div className='reviews_container_second'>
-                <h2>A Solid product with good support</h2>
-                <h3>I’ve been using another well-established accounting software which has worked well but the Covid took a major toll on my business and I’ve needed to cut my costs which included looking at another accounting solution. After a little searching, I came across Invoice crowd, and again after performing a little due diligence, I could see that they were a relatively new company</h3>
+                <h3>The online booking and reservation feature is so convenient and saves me so much time compared to having to call or visit the cold storage facility in person.</h3>
                 </div>
             </div>
             <div className='reviews_container_sub'>
                 <div className='reviews_container_first'>
                     <img src={Imageone} alt='user image'/>
                     <div className='reviews_container_second'>
-                        <h1>Richard Tee</h1>
+                        <h1>Aashish upadhey</h1>
                         <p>5</p>
                         <p>Feb 14, 2022 via Trustpilot</p>
                     </div>
                 </div>
                 <div className='reviews_container_second'>
-                <h2>A Solid product with good support</h2>
-                <h3>I’ve been using another well-established accounting software which has worked well but the Covid took a major toll on my business and I’ve needed to cut my costs which included looking at another accounting solution. After a little searching, I came across Invoice crowd, and again after performing a little due diligence, I could see that they were a relatively new company</h3>
+                <h3> I highly recommend this app to any farmer looking for an efficient and reliable cold storage solution.</h3>
                 </div>
             </div>
         </div>

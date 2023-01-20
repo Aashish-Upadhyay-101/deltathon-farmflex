@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 import "./Login.css";
 import { useLoginMutation } from "../../api/farmApi";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
@@ -14,6 +15,7 @@ const Login = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     Login(loginData);
+    navigate('/store');
   };
 
   useEffect(() => {

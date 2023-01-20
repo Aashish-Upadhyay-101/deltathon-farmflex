@@ -10,6 +10,7 @@ import {
 } from "../../api/farmApi";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import { useNavigate } from "react-router";
 
 const options = ["Nepal", "India", "Pakistan"];
 
@@ -34,6 +35,7 @@ const steps = [
   },
 ];
 const Signup = () => {
+  const navigate = useNavigate();
   const detail = useSelector((state) => state.signupState.data);
 
   const [signup, { data }] = useSignupMutation();
@@ -78,6 +80,8 @@ const Signup = () => {
   const updateProfileHandler = () => {
     profileUpadte({ ...detail, username: localStorage.getItem("username") });
     message.success("Processing complete!");
+    navigate('/store')
+
   };
   return (
     <div className="signup">

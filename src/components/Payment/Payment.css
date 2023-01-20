@@ -1,0 +1,45 @@
+.payment_container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_sub_container{
+    width: 35%;
+    height: 60%;
+    border: 3px solid #793192;
+    background-color: white;
+    padding: 3rem;
+}
+.khaltilogo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.khaltilogo_container img{
+    width: 20%;
+}
+.khalti_detail_container div{ 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.khalti_detail_container div label{
+    font-size: 1.3rem;
+}
+.khalti_detail_container div input{
+    padding: 1rem;
+}
+
+.payment_button{
+    margin-top: 5rem;
+    width: 100%;
+    background-color: #793192;
+    color: white;
+    padding: 2rem;
+    border: none;
+
+}

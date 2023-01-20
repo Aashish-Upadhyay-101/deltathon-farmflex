@@ -36,19 +36,19 @@ const App = () => {
     <div className='collaps__container'>
     <div className='collaps__container_sub'>
     <Collapse defaultActiveKey={['1']} onChange={onChange}>
-      <Panel header="This is panel header 1" key="1">
+      <Panel header="What is FarmFlex?" key="1">
         <p>{textone}</p>
       </Panel>
-      <Panel header="This is panel header 2" key="2">
+      <Panel header="Why FarmFlex?" key="2">
         <p>{texttwo}</p>
       </Panel>
-      <Panel header="This is panel header 3" key="3">
+      <Panel header="How can you contact with cold store directly?" key="3">
         <p>{textthree}</p>
       </Panel>
-      <Panel header="This is panel header 3" key="3">
+      {/* <Panel header="Why are we less expensive than other platform?" key="4">
         <p>{textfour}</p>
-      </Panel>
-      <Panel header="This is panel header 3" key="3">
+      </Panel> */}
+      <Panel header="How can we satisfied you desire?" key="5">
         <p>{textfive}</p>
       </Panel>
     </Collapse>

@@ -10,7 +10,7 @@ const Navbar = () => {
         <ul className='link_container'>
                 <Link><li>About us</li></Link>
                 <Link><li>Features</li></Link>
-                <Link><li>Register</li></Link>
+                <Link to={"/login"}><li>Login</li></Link>
         </ul>
     </div>
   )

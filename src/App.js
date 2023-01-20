@@ -7,6 +7,7 @@ import Homepage from "./pages/HomePage/Homepage.js";
 import Storepage from "./pages/StorePage/Storepage.js";
 import SingleStorePage from "./pages/SingleStorePage/SingleStorePage.js";
 import MyStorage from "./pages/MyStorage/MyStorage";
+import Payment from "./components/Payment/Payment.js";
 function App() {
   return (
     <ConfigProvider
@@ -24,6 +25,7 @@ function App() {
           <Route path="/store" element={<Storepage />}></Route>
           <Route path="/store/:id" element={<SingleStorePage />}></Route>
           <Route path="/my-storage" element={<MyStorage />}></Route>
+          <Route path="/payment-in-khalti" element={<Payment/>} />
         </Routes>
       </div>
     </ConfigProvider>
